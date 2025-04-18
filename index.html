@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Interaction Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>API Interaction Lab</h1>
+
+    <!-- GET Buttons -->
+    <div class="buttons">
+      <button id="fetch-btn">Fetch Data with fetch()</button>
+      <button id="xhr-btn">Fetch Data with XHR</button>
+    </div>
+
+    <!-- Output for GET -->
+    <div id="output" class="output-box"></div>
+
+    <!-- POST / PUT Form -->
+    <form id="post-form">
+      <h2>Create / Update a Post</h2>
+      <input type="number" id="post-id" placeholder="Post ID (for PUT only)" />
+      <input type="text" id="title" placeholder="Post Title" required />
+      <textarea id="body" placeholder="Post Body" required></textarea>
+      <div class="form-buttons">
+        <button type="submit">Submit Post (POST)</button>
+        <button type="button" id="put-btn">Update Post (PUT)</button>
+      </div>
+    </form>
+
+    <!-- DELETE Section -->
+    <div class="delete-section">
+      <h2>Delete a Post</h2>
+      <input type="number" id="delete-id" placeholder="Post ID to Delete" />
+      <button type="button" id="delete-btn">Delete Post</button>
+    </div>
+
+    <!-- Response Output -->
+    <div id="response-output" class="output-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
